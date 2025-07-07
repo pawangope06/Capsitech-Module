@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    
+
+    <script>
+      function data() {
+        const name = document.getElementById("inp1").value;
+        const contactNumber = document.getElementById("inp2").value;
+        const password = document.getElementById("inp3").value;
+        const confirmPassword = document.getElementById("inp4").value;
+
+        if (password !== confirmPassword) {
+          alert("Passwords do not match!");
+          return false;
+        } else if (contactNumber.length !== 10 || isNaN(contactNumber)) {
+          alert("Please enter a valid 10-digit contact number.");
+          return false;
+        } else if (name.length <= 3) {
+          alert("Name must be at least 3 characters long.");
+          return false;
+        }
+
+        localStorage.setItem("name", name);
+        localStorage.setItem("contactNumber", contactNumber);
+        localStorage.setItem("password", password);
+        return true;
+      }
+    </script>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form onsubmit="return data()" action="index2.html">
+        <div class="form-row">
+          <label for="inp1">Name:</label>
+          <input type="text" id="inp1" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="inp2">Contact Number:</label>
+          <input
+            type="text"
+            id="inp2"
+            placeholder="Enter your Contact Number"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="inp3">Password:</label>
+          <input
+            type="password"
+            id="inp3"
+            placeholder="Enter your Password"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="inp4">Confirm Password:</label>
+          <input
+            type="password"
+            id="inp4"
+            placeholder="Confirm your Password"
+            required
+          />
+        </div>
+
+        <input type="submit" value="Submit" class="btn" />
+      </form>
+    </div>
+  </body>
+</html>

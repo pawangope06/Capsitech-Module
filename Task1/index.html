@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    
+    
+    <link rel="stylesheet" href="styles.css " />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=motion_play" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="company">
+        <h4 class="company-name">uTeach</h4>
+        <p>Products</p>
+        <p>Solutions</p>
+        <p>Pricing</p>
+        <span class="dropdown">
+  Resources <span class="arrow">▼</span>
+</span>
+      </div>
+      
+      <div class="login">
+        <p>Login</p>
+        <button>Sign Up Now</button>
+      </div>
+    </div>
+
+    <div class="hero-section">
+  <div class="hero-left">
+    <h1><span class="highlight">Teach</span> students worldwide</h1>
+    <p>
+      Amet nunc diam orci duis ut sit diam arcu, nec.<br>
+      Eleifend proin massa tincidunt viverra lectus pulvinar.<br>
+      Nunc ipsum est pellentesque turpis ultricies.
+    </p>
+    <div class="cta-buttons">
+      <button class="signup-btn">Sign Up Now</button>
+      <a href="#" class="view-demo">View Demo</a>
+    </div>
+    <p class="trusted">Trusted by leading companies</p>
+    <div class="company-logos">
+      <!-- Replace with real icons -->
+      <span>🏢</span><span>⚙️</span><span>💡</span><span>📦</span><span>🔧</span>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="chat-box">
+      <p>Nunc, at libero neque</p>
+      <p>Viverra sed</p>
+      <p class="dark">Turpis platea nunc mattis</p>
+      <p class="dark">Vitae viverra ut non</p>
+    </div>
+    <div class="people-images">
+      <img src="../image 2358.png" class="person1" alt="Person 1">
+      <img src="../image 2358.png" class="person2" alt="Person 2">
+    </div>
+  </div>
+</div>
+<div class="cards-container" style="display: flex; gap: 2rem; justify-content: center; margin-top: 2rem;">
+    <!-- Left Card -->
+    <div class="card" style="flex: 1; max-width: 350px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 1.5rem; display: flex; flex-direction: column; align-items: center;margin-bottom: 25px;">
+        <img src="data:image/png;base64,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" alt="Card Image Left" style="border-radius: 8px; margin-bottom: 1rem;">
+        <h3>Core Java</h3>
+        <p>Learn from basic to advance with 3 live projects and mentorship.</p>
+    </div>
+    <!-- Right Card -->
+    <div class="card" style="flex: 1; max-width: 350px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 1.5rem; display: flex; flex-direction: column; align-items: center; margin-bottom: 25px;">
+        <img src="data:image/png;base64,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" alt="Card Image Right" style="border-radius: 8px; margin-bottom: 1rem;">
+        <h3>Python- From zero to hero</h3>
+        <p>Learn from basic to advance with 3 live projects and mentorship.</p>
+    </div>
+</div>
+    <div class="footer">UTeach All rights reserved</div>
+  </body>
+</html>

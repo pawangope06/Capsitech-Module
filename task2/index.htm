@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+        />
+        <style>
+                body{
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        background-color: #fff;
+                }
+                .container{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                }
+                .logo{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                }
+             
+                h1{
+                        font-size: 50px;
+                        color: #4285f4;
+                        font-family: 'Arial', sans-serif;
+                        margin-bottom: 20px;
+                }
+                .search-bar{
+                        background-color: aliceblue;
+                        border-radius: 10px;
+                        height: 30px;
+                        width: 400px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                }
+                .search{
+                        display: flex;
+                        margin-left: 5px;
+                }
+                .search-tab{
+                        display: flex;
+                        justify-content: space-around;
+                }
+                .mic{
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        margin-right: 20px;
+                        background-color: aliceblue;
+                }
+                .lens{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 15px;
+                        background-color: aliceblue;
+                }
+        </style>
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="logo">
+                    <h1>Google</h1>
+            </div>
+            <div class="search-bar">
+                <span class="material-symbols-outlined search"> search </span>
+                <input type="text" placeholder="Search Google or type URL" class="search-tab" style="border: none; outline: none; background-color: aliceblue; width: 100%; padding-left: 5px; border-radius: 10px;" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt3fQ8V0S5jt1F7xDQWVGPYFhfaD-LJhj61g&s" class="mic" alt="">
+                <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/technology/google-lens-ct2d7rs1jj6ikoyfyvil0i.png/google-lens-c9p8jx6v5l8tvputaf5u6.png?_a=DATAdtAAZAA0" class="lens" alt="">
+            </div>
+        </div>
+    </body>
+</html>

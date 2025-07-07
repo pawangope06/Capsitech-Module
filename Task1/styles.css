@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-container{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5px;
+}
+.company{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.company-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(252, 134, 8);
+}
+.login{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.login button{
+    padding: 10px;
+    border-radius: 5px;
+    border : 1px solid black;
+    background-color: rgb(175, 177, 185);
+}
+.login button:hover{
+    background-color: rgb(41, 88, 190);
+    cursor: pointer;
+}
+
+/* hero section css */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  font-family: sans-serif;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* .highlight {
+  position: relative;
+  color: black;
+  font-weight: bold;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: orange;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+} */
+
+.hero-left p {
+  color: #555;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.signup-btn {
+  background-color: orange;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.view-demo {
+  color: #1a73e8;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.trusted {
+  margin-top: 40px;
+  font-size: 14px;
+  color: gray;
+}
+
+.company-logos span {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.hero-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-box {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.chat-box p {
+  background-color: #eee;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.chat-box .dark {
+  background-color: #333;
+  color: white;
+}
+
+.people-images {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.people-images img {
+  border-radius: 100px;
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    color: #555;
+}
