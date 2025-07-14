@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap"
@@ -17,102 +16,61 @@
     <style>
       body{
       background-color: #faf7f0;
-      font-family: All Standard TT;
       word-spacing: 5px;
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
+      /* padding: 20px; */
       }
     </style>
   </head>
 
   <body class="overflow-x-hidden">
-    <!-- Nav Section -->
-
     <div class="w-full max-w-screen-xl mx-auto px-4">
-
-
-      
       <!-- Navbar -->
       <nav class="flex flex-col md:flex-row justify-between items-center text-black gap-2">
-        <div class=" md:mb-0 md:mr-4">
-          <p class="text-2xl font-bold cursor-pointer">FJ</p>
-        </div>
-        <div class="flex flex-wrap items-center justify-center gap-2">
-          <a
-            href="#home"
-            class="text-base hover:underline hover:decoration-blue-500 font-light"
-            >Home</a
-          >
-          <a
-            href="#services"
-            class="text-base hover:underline hover:decoration-blue-500 font-light"
-            >Services</a
-          >
-          <a
-            href="#gallery"
-            class="text-base hover:underline hover:decoration-blue-500 font-light"
-            >Gallery</a
-          >
-          <a
-            href="#Aboutus"
-            class="text-base hover:underline hover:decoration-blue-500 font-light"
-            >About us</a
-          >
-          <button
-            class="px-5 py-2 text-white font-light text-base ml-1 bg-[#523C1E] border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
-          >
-            Contact
-          </button>
+        <p class="text-[4vw] font-bold cursor-pointer">FJ</p>
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <a href="#home" class="text-[2vw] hover:underline hover:decoration-blue-500 font-light">Home</a>
+          <a href="#services" class="text-[2vw] hover:underline hover:decoration-blue-500 font-light">Services</a>
+          <a href="#gallery" class="text-[2vw] hover:underline hover:decoration-blue-500 font-light">Gallery</a>
+          <a href="#Aboutus" class="text-[2vw] hover:underline hover:decoration-blue-500 font-light">About us</a>
+          <button class="px-5 py-2 text-white font-light text-[2vw] ml-1 bg-[#523C1E] border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300">Contact</button>
         </div>
       </nav>
 
       <!-- Hero Section -->
-      <section
-        class="flex justify-between py-10 gap-10 h-[100vh font-extralight"
-      >
-        <div class="flex flex-col justify-center items-start space-y-5 w-1/2">
-          <p
-            class="font-light text-[50px] leading-tight hover:underline hover:decoration-blue-500"
-          >
-            Beautiful, masterful <br />design never goes <br />
-            out of fashion.
-          </p>
+      <section class="flex flex-col md:flex-row justify-between py-10 gap-10 h-auto md:h-[100vh]">
+        <div class="flex flex-col justify-center items-center space-y-5 w-full md:w-1/2">
+          <p class="font-light text-[5vw] md:text-[50px] leading-tight hover:underline hover:decoration-blue-500">Beautiful, masterful <br />design never goes <br />out of fashion.</p>
           <div class="flex items-center gap-10 mt-10">
-            <button
-              class="px-6 py-3 text-white font-light text-base bg-[#523C1E] border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
-            >
-              Contact
-            </button>
+            <button class="px-6 py-3 text-white font-light text-[2vw] bg-[#523C1E] border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300">Contact</button>
             <div class="flex items-center gap-4 cursor-pointer group">
-              <span
-                class="text-base hover:underline hover:decoration-blue-500 font-light"
-                >Gallery</span
-              >
-              <span
-                class="material-symbols-outlined text-xl leading-none transition-colors duration-200 hover:text-blue-500"
+              <span class="text-[2vw] hover:underline hover:decoration-blue-500 font-light">Gallery</span>
+              <span style="font-size: 3vw;"
+                class="material-symbols-outlined text-[2vw] leading-none transition-colors duration-200 hover:text-blue-500"
               >
                 arrow_forward
               </span>
             </div>
           </div>
         </div>
-        <div class="p-10 justify-center items-center w-1/2">
+        <div class="p-10 justify-center items-center w-full md:w-1/2">
           <img class="w-full" src="./heroimg/Group 22.png" alt="herobg" />
         </div>
       </section>
 
       <!-- Services Section -->
-      <section class="py-10">
-        <div class="flex items-center space-y-10">
-          <h1 class="text-[50px] hover:underline hover:decoration-blue-500">
+      <section class="py-10 flex flex-col ">
+        <div class="flex  items-center space-y-10">
+          <h1 class="mx-auto text-[7vw] hover:underline hover:decoration-blue-500">
             Our Services
           </h1>
         </div>
 
         <!-- Service 1 -->
-        <div class="flex justify-between mt-20 mb-16 gap-10">
+        <div class="flex flex-col items-center justify-between mt-20 mb-16 gap-10">
           <div class="w-1/2">
             <img
               src="Images/img1.png"
@@ -122,7 +80,7 @@
           </div>
           <div class="w-1/2 space-y-5 flex flex-col justify-center items-start">
             <p
-              class="font-bold text-[42px] hover:underline hover:decoration-blue-500"
+              class="font-bold text-[4vw] hover:underline hover:decoration-blue-500"
             >
               Custom Jewelry
             </p>

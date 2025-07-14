@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@media(width<750px){
+    .responsive{
+        overflow: hidden;
+        width: 100vw;
+    }
+
+    nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        font-size: 2vw;
+    }
+    .service-res{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-res button{
+        padding: .5vw;
+    }
+    .service1{
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+    .Service2{
+        flex-direction: column;
+        margin-top: 10vh;
+        align-items: center;
+    }
+    .Service3{
+        flex-direction: column;
+        margin-top: 10vh;
+        align-items: center;
+    }
+}

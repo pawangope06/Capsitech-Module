@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
+    />
+    <style>
+      body {
+        background-color: #faf7f0;
+        font-family: Old Standard TT;
+        word-spacing: 5px;
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        padding: 20px;
+      }
+      .girl-img:hover {
+        border: 4px solid #4285f4;
+      }
+    </style>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div class="w-full max-w-screen-xl mx-auto px-4">
+      <!-- Navbar -->
+      <nav
+        class="flex flex-col md:flex-row justify-between items-center text-black gap-2 px-4 md:px-10 py-4"
+      >
+        <p
+          class="text-[8vw] sm:text-[1.5rem] md:text-[1.25rem] font-bold cursor-pointer text-center md:text-left"
+        >
+          FJ
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-20">
+          <a
+            href="#home"
+            class="text-[1.1rem
+            ] hover:underline hover:decoration-blue-500 font-extralight"
+            >Home</a
+          >
+          <a
+            href="#services"
+            class="text-[1.1rem
+            ] hover:underline hover:decoration-blue-500 font-extralight"
+            >Services</a
+          >
+          <a
+            href="#gallery"
+            class="text-[1.1rem
+            ] hover:underline hover:decoration-blue-500 font-extralight"
+            >Gallery</a
+          >
+          <a
+            href="#Aboutus"
+            class="text-[1.1rem
+            ] hover:underline hover:decoration-blue-500 font-extralight"
+            >About us</a
+          >
+          <button
+            class="px-4 py-2 text-white font-light text-[1rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+          >
+            Contact
+          </button>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col md:flex-row items-center justify-center md:justify-between py-10 gap-10 px-4 md:px-10 mt-10">
+
+        <!-- Left Content -->
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left space-y-5 w-full md:w-1/2"
+        >
+          <p
+            style="font-family: Old Standard TT"
+            class="whitespace-pre-line font-light text-[8vw] sm:text-[3rem] leading-tight"
+          >
+            Beautiful, masterful design never goes out of fashion.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mt-6"
+          >
+            <button
+              class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+            >
+              Contact
+            </button>
+
+            <div class="flex items-center gap-3 cursor-pointer group">
+              <span
+                class="text-base hover:underline hover:decoration-blue-500 font-light"
+                >Gallery</span
+              >
+              <span
+                class="material-symbols-outlined text-xl leading-none transition-colors duration-200 hover:text-blue-500"
+              >
+                arrow_forward
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img
+            class="w-full max-w-[500px] h-auto"
+            src="./heroimg/Group 22.png"
+            alt="herobg"
+          />
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="py-10 px-5 sm:px-10 mt-30
+      ">
+        <h1
+          class="text-[8vw] sm:text-[3rem] text-center md:text-left font-light px-4 md:px-0"
+        >
+          Our Services
+        </h1>
+
+        <!-- Service 1 -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mt-20 mb-16 gap-10"
+        >
+          <div class="w-full md:w-1/2">
+            <img
+              src="Images/img1.png"
+              alt="Custom Jewelry"
+              class="w-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+            />
+          </div>
+          <div
+            class="w-full md:w-1/2 space-y-5 flex flex-col justify-center items-center md:items-start text-center md:text-left"
+          >
+            <p class="font-bold text-[8vw] sm:text-[42px]">Custom Jewelry</p>
+            <p
+              style="font-family: Heebo, sans-serif; opacity: 60%"
+              class="font-light text-[5vw] sm:text-[22px] text-gray-700"
+            >
+              Our team specializes in designing and crafting complex custom
+              jewelry in gold or platinum. Our 3D designers can work with even
+              the most complex ideas and create a digital model for you to
+              approve before committing to production.
+            </p>
+            <button
+              class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mt-20 mb-16 gap-10"
+        >
+          <div
+            class="w-full md:w-1/2 space-y-5 flex flex-col justify-center items-center md:items-start text-center md:text-left"
+          >
+            <p class="font-bold text-[8vw] sm:text-[42px]">Engagement Ring</p>
+            <p
+              style="font-family: Heebo, sans-serif; opacity: 60%"
+              class="font-light text-[5vw] sm:text-[22px] text-gray-700"
+            >
+              Our team of 3d modelers and jewelers can create literally any ring
+              you can imagine, including complex designs. We're opening up our
+              services to private clients, so you can get a beautiful, designer
+              quality engagement ring at an affordable price.
+            </p>
+            <button
+              class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+            >
+              Read More
+            </button>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img
+              src="Images/pexels-say-straight-2735970.png"
+              alt="Engagement Ring"
+              class="w-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+            />
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mt-20 mb-16 gap-10"
+        >
+          <div class="w-full md:w-1/2">
+            <img
+              src="./Images/Rectangle 7.png"
+              alt="Jewelry Manufacturing"
+              class="w-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+            />
+          </div>
+          <div
+            class="w-full md:w-1/2 space-y-5 flex flex-col justify-center items-center md:items-start text-center md:text-left"
+          >
+            <p class="font-bold text-[8vw] sm:text-[42px]">
+              Jewelry Manufacturing
+            </p>
+            <p
+              style="font-family: Heebo, sans-serif; opacity: 60%"
+              class="font-light text-[5vw] sm:text-[22px] text-gray-700"
+            >
+              We work with you to make sure your jewelry is produced exactly as
+              your specify and with impeccable standards. We can manufacture a
+              unique collection for your store, or even work with custom orders
+              for your customers.
+            </p>
+            <button
+              class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner Section -->
+      <section class="py-10 px-4 sm:px-6 md:px-10">
+        <div
+          class="flex flex-col md:flex-row justify-between items-stretch bg-[#523C1E] font-extralight overflow-hidden"
+        >
+          <!-- Left Image -->
+          <div class="w-full md:w-1/2">
+            <img
+              src="./Images/Rectangle 9.png"
+              alt="necklace"
+              class="banner-img w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Right Content -->
+          <div
+            class="w-full md:w-1/2 flex flex-col text-white space-y-5 p-6 sm:p-10 justify-center items-center md:items-start text-center md:text-left"
+          >
+            <p class="text-[8vw] sm:text-[3rem] font-bold leading-tight">
+              No limits to the <br />lifestyle you deserve.
+            </p>
+
+            <p
+              style="font-family: Heebo, sans-serif; opacity: 70%"
+              class="font-light text-[5vw] sm:text-[1.25rem] text-gray-300"
+            >
+              Contact us and we’ll reply you back with a personalized plan and
+              quote.
+            </p>
+
+            <div>
+              <button
+                class="px-4 py-2 text-[#523C1E] font-light text-[4.5vw] sm:text-[1.5rem] bg-white hover:bg-blue-500 transition-colors duration-300"
+              >
+                Send Your Design Idea
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect Us Section -->
+      <section class="py-10 px-4 sm:px-6 md:px-10">
+        <!-- Heading -->
+        <h1
+          class="text-[8vw] sm:text-[3rem] text-center font-extralight leading-tight"
+        >
+          Connect us on <br />Instagram
+        </h1>
+
+        <!-- Image Grid -->
+        <div
+          class="flex flex-col md:flex-row mt-10 md:gap-0 gap-6 items-center md:items-start justify-evenly"
+        >
+          <!-- Left Image -->
+          <div class="w-full md:w-auto max-w-[90%] md:max-w-none">
+            <img
+              src="./Connectimg/Rectangle 10.png"
+              alt="ladywithnecklace"
+              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+            />
+          </div>
+
+          <!-- Two Images -->
+          <div
+            class="flex flex-col gap-1.5 w-full md:w-auto max-w-[90%] md:max-w-none"
+          >
+            <img
+              src="./Connectimg/Rectangle 39.png"
+              alt="locket"
+              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+            />
+            <img
+              src="./Connectimg/Rectangle 40.png"
+              alt="diamondnecklace"
+              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+            />
+          </div>
+
+          <!-- Right Image -->
+          <div class="w-full md:w-auto max-w-[90%] md:max-w-none">
+            <img
+              src="./Connectimg/Rectangle 42.png"
+              alt="diamondwings"
+              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+            />
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="pt-6 mt-16 flex justify-center">
+          <button
+            class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+          >
+            Instagram
+          </button>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="py-10 px-4 sm:px-6 md:px-10">
+        <!-- Heading -->
+        <h1
+          class="md:text-start lg:text-start text-[8vw] sm:text-[3rem] font-extralight text-center mb-10"
+        >
+          About us
+        </h1>
+
+        <!-- Content Section -->
+        <div class="flex flex-col md:flex-row items-stretch gap-10">
+          <!-- Left Image with right gray border -->
+          <div class="w-full md:w-1/2 bg-gray-500 relative">
+            <img
+              src="./aboutusimg/young-blonde-woman-pearl-necklace-white-v-neck-top-smiles-widely-with-closed-eyes-takes-selfie-outside 1.png"
+              alt="woman"
+              style="position: relative; right: 6px; top: 2px"
+              class="girl-img w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Right Text Vertically Centered -->
+          <div
+            class="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left text-gray-700 space-y-6"
+          >
+            <p
+              style="opacity: 70%"
+              class="text-[5vw] sm:text-[1.25rem] font-extralight"
+            >
+              At NaamNYC, we work with high-end designers (both new and
+              established), retail stores, and also private clients looking for
+              that perfect custom piece or engagement ring.
+            </p>
+            <p
+              style="opacity: 70%"
+              class="text-[5vw] sm:text-[1.25rem] font-extralight"
+            >
+              Our studio combines over 20 years of experience with a modern
+              focus on 3d printing technology. While we specialize in custom
+              design and digital modeling, we're also a respected high-end
+              jewelry manufacturer.
+            </p>
+            <p
+              style="opacity: 70%"
+              class="text-[5vw] sm:text-[1.25rem] font-extralight"
+            >
+              Our expert team of jewelers and designers will take your custom
+              design idea all the way from concept to reality.
+            </p>
+
+            <!-- Social Icons -->
+            <div
+              class="flex items-center justify-center md:justify-start gap-4 pt-4"
+            >
+              <img
+                src="./footerimg/twitter 2.png"
+                alt="twitter"
+                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300"
+              />
+              <img
+                src="./footerimg/instagram 2.png"
+                alt="instagram"
+                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300"
+              />
+              <img
+                src="./footerimg/facebook 2.png"
+                alt="facebook"
+                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="pt-6 mt-16 flex justify-center">
+          <button
+            class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+          >
+            Contact us
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer
+        class="flex flex-col md:flex-row justify-between mt-10 p-7 gap-10 text-black items-center text-center md:items-start md:text-left"
+      >
+        <!-- Left Column -->
+        <div class="flex-1 space-y-4">
+          <p
+            class="text-[5vw] sm:text-4xl font-bold hover:underline hover:decoration-blue-500"
+          >
+            Naam
+          </p>
+          <p
+            class="text-base sm:text-lg font-extralight text-gray-500 leading-relaxed"
+          >
+            At NaamNYC, we work with high-end designers (both new and
+            established), retail stores, and also private clients looking for
+            that perfect custom piece or engagement ring.
+          </p>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="flex flex-1 flex-col space-y-4">
+          <p
+            class="text-[5vw] sm:text-4xl font-bold hover:underline hover:decoration-blue-500"
+          >
+            About us
+          </p>
+          <p
+            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500"
+          >
+            Services
+          </p>
+          <p
+            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500"
+          >
+            Gallery
+          </p>
+          <p
+            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500"
+          >
+            About us
+          </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex flex-1 flex-col space-y-4">
+          <p
+            class="text-2xl sm:text-3xl font-bold hover:underline hover:decoration-blue-500"
+          >
+            Support
+          </p>
+          <div class="flex flex-col space-y-4">
+            <div
+              class="flex items-center gap-2 w-max mx-auto md:mx-0 py-1 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+            >
+              <img
+                src="./footerimg/Vector 13 (Stroke).png"
+                alt="email"
+                class="w-5 h-5"
+              />
+              <p class="text-sm sm:text-base">hello@naamnyc.com</p>
+            </div>
+            <div
+              class="flex items-center gap-2 w-max mx-auto md:mx-0 py-1 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+            >
+              <img src="./footerimg/Vector.png" alt="mobile" class="w-5 h-5" />
+              <p class="text-sm sm:text-base">156512651</p>
+            </div>
+            <div class="flex items-center gap-4 mt-2 mx-auto md:mx-0">
+              <img
+                src="./footerimg/twitter 2.png"
+                alt="twitter"
+                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+              />
+              <img
+                src="./footerimg/instagram 2.png"
+                alt="instagram"
+                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+              />
+              <img
+                src="./footerimg/facebook 2.png"
+                alt="facebook"
+                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
