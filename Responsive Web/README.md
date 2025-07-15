@@ -32,7 +32,8 @@ This landing page is designed for a jewelry brand, showcasing their services, ga
 ## Features
 
 - **Fully responsive**: Looks great on all devices.
-- **Modern design**: Uses Tailwind CSS for rapid styling.
+- **Modern design**: Uses Tailwind CSS for rapid styling (via CDN).
+- **Mobile navigation**: Hamburger menu for mobile, sidebar navigation.
 - **Image-rich sections**: Multiple sections with relevant images.
 - **Easy navigation**: Clear navbar and section links.
 - **Contact and social links**: Easy ways for users to get in touch.
@@ -71,7 +72,9 @@ Images/
 
 - **Location**: Top of the page.
 - **Purpose**: Provides navigation links to Home, Services, Gallery, and About Us. Also includes a "Contact" button.
-- **Responsive**: Stacks vertically on small screens, horizontally on larger screens.
+- **Responsive**: 
+  - On desktop: horizontal menu.
+  - On mobile: hamburger button opens a sidebar with navigation links.
 - **Branding**: Shows the brand initials ("FJ").
 
 ---
@@ -99,12 +102,13 @@ Images/
      - Image on the left, description on the right.
      - Explains custom design and 3D modeling.
   2. **Engagement Ring**:  
-     - Description on the left, image on the right.
+     - Description on the left, image on the right (alternates on mobile).
      - Focuses on bespoke engagement rings.
   3. **Jewelry Manufacturing**:  
      - Image on the left, description on the right.
      - Details about manufacturing and custom orders.
 - **Each service** includes a "Read More" button.
+- **Responsive**: Stacks vertically on mobile, side-by-side on desktop.
 
 ---
 
@@ -117,6 +121,7 @@ Images/
   - Left: Image (e.g., necklace).
   - Right: Text and a "Send Your Design Idea" button.
 - **Design**: Uses a dark background for contrast.
+- **Responsive**: Stacks vertically on mobile.
 
 ---
 
@@ -128,6 +133,7 @@ Images/
   - Heading: "Connect us on Instagram".
   - Image grid: Four images showcasing jewelry.
   - "Instagram" button for call-to-action.
+- **Responsive**: Image grid stacks on mobile.
 
 ---
 
@@ -140,6 +146,7 @@ Images/
   - Right: Three paragraphs about the business, experience, and team.
   - Social media icons (Twitter, Instagram, Facebook).
   - "Contact us" button.
+- **Responsive**: Stacks vertically on mobile.
 
 ---
 
@@ -154,6 +161,7 @@ Images/
      - About us, Services, Gallery.
   3. **Support**:  
      - Email, phone, and social media icons.
+- **Responsive**: Stacks columns on mobile.
 
 ---
 
@@ -162,12 +170,13 @@ Images/
 - **Images**: Replace images in the respective folders to match your brand.
 - **Colors & Fonts**: Adjust Tailwind classes or add custom CSS in the `<style>` tag.
 - **Text**: Update headings, descriptions, and contact info as needed.
+- **Navigation**: Edit the navigation links in the navbar and sidebar as needed.
 
 ---
 
 ## Credits
 
-- **Tailwind CSS**: For utility-first CSS framework.
+- **Tailwind CSS**: For utility-first CSS framework (via CDN).
 - **Google Fonts**: For icons and font styles.
 - **Images**: Placeholder images are used; replace with your own for production.
 
@@ -176,7 +185,3 @@ Images/
 ## License
 
 This project is for educational and demonstration purposes. Replace images and content before using for commercial purposes.
-
----
-
-*Feel free to reach out if you have any questions or need
