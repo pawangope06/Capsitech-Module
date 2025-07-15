@@ -14,7 +14,6 @@
         font-family: Old Standard TT;
         word-spacing: 5px;
         display: flex;
-        /* flex-wrap: wrap; */
         justify-content: center;
         padding: 20px;
       }
@@ -25,53 +24,50 @@
   </head>
 
   <body class="overflow-x-hidden">
-    <div class="w-full max-w-screen-xl mx-auto px-4">
+    <div class="w-full max-w-screen-xl  mx-auto px-4">
+      
       <!-- Navbar -->
-      <nav
-        class="flex flex-col md:flex-row justify-between items-center text-black gap-2 px-4 md:px-10 py-4"
-      >
-        <p
-          class="text-[8vw] sm:text-[1.5rem] md:text-[1.25rem] font-bold cursor-pointer text-center md:text-left"
-        >
-          FJ
-        </p>
+       <nav class="flex justify-between items-center text-black px-4 md:px-10 py-4">
+      <!-- Logo -->
+      <p class="text-[8vw] sm:text-[1.5rem] md:text-[1.25rem] font-bold cursor-pointer text-center md:text-left">
+        FJ
+      </p>
 
-        <div class="flex flex-wrap items-center justify-center gap-20">
-          <a
-            href="#home"
-            class="text-[1.1rem
-            ] hover:underline hover:decoration-blue-500 font-extralight"
-            >Home</a
-          >
-          <a
-            href="#services"
-            class="text-[1.1rem
-            ] hover:underline hover:decoration-blue-500 font-extralight"
-            >Services</a
-          >
-          <a
-            href="#gallery"
-            class="text-[1.1rem
-            ] hover:underline hover:decoration-blue-500 font-extralight"
-            >Gallery</a
-          >
-          <a
-            href="#Aboutus"
-            class="text-[1.1rem
-            ] hover:underline hover:decoration-blue-500 font-extralight"
-            >About us</a
-          >
-          <button
-            class="px-4 py-2 text-white font-light text-[1rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
-          >
-            Contact
-          </button>
-        </div>
-      </nav>
+      <!-- Hamburger Button -->
+      <button id="menuBtn" class="md:hidden text-2xl focus:outline-none">
+        ☰
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex flex-wrap items-center gap-12">
+        <a href="#home" class="text-[1.1rem] hover:underline hover:decoration-blue-500 font-extralight">Home</a>
+        <a href="#services" class="text-[1.1rem] hover:underline hover:decoration-blue-500 font-extralight">Services</a>
+        <a href="#gallery" class="text-[1.1rem] hover:underline hover:decoration-blue-500 font-extralight">Gallery</a>
+        <a href="#Aboutus" class="text-[1.1rem] hover:underline hover:decoration-blue-500 font-extralight">About us</a>
+        <button class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer">
+          Contact
+        </button>
+      </div>
+    </nav>
+
+    
+    <div id="sidebar" class="fixed top-0 left-0  w-64 bg-[#faf7f0] shadow-lg transform -translate-x-full transition-transform duration-300 z-50 md:hidden flex flex-col p-6 gap-6">
+      <!-- Close Button -->
+      <button id="closeBtn" class="self-end text-2xl font-bold">&times;</button>
+
+      <!-- Sidebar Links -->
+      <a href="#home" class="text-[1.1rem] hover:underline hover:decoration-blue-500 font-extralight">Home</a>
+      <a href="#services" class="text-[1.1rem] hover:underline hover:decoration-blue-500 font-extralight">Services</a>
+      <a href="#gallery" class="text-[1.1rem] hover:underline hover:decoration-blue-500 font-extralight">Gallery</a>
+      <a href="#Aboutus" class="text-[1.1rem] hover:underline hover:decoration-blue-500 font-extralight">About us</a>
+      <button class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer">
+        Contact
+      </button>
+    </div>
 
       <!-- Hero Section -->
       <section
-        class="flex flex-col md:flex-row items-center justify-center md:justify-between py-10 gap-10 px-4 md:px-10 mt-10">
+        class="flex flex-col sm:mx-auto md:flex-row items-center justify-center md:justify-between py-10 gap-10 px-4 md:px-10 ">
 
         <!-- Left Content -->
         <div
@@ -81,27 +77,28 @@
             style="font-family: Old Standard TT"
             class="whitespace-pre-line font-light text-[8vw] sm:text-[3rem] leading-tight"
           >
-            Beautiful, masterful design never goes out of fashion.
+            Beautiful, masterful <br />design never goes <br />out of fashion.
           </p>
 
           <div
             class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mt-6"
           >
             <button
-              class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+             class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer"
             >
               Contact
             </button>
 
-            <div class="flex items-center gap-3 cursor-pointer group">
+            <div class="flex items-center gap-3 cursor-pointer">
               <span
                 class="text-base hover:underline hover:decoration-blue-500 font-light"
                 >Gallery</span
               >
-              <span
-                class="material-symbols-outlined text-xl leading-none transition-colors duration-200 hover:text-blue-500"
+              <span 
+                class="material-symbols-outlined text-[2vw] leading-none transition-colors duration-200 hover:text-blue-500"
               >
                 arrow_forward
+              </span>
               </span>
             </div>
           </div>
@@ -118,117 +115,83 @@
       </section>
 
       <!-- Services Section -->
-      <section class="py-10 px-5 sm:px-10 mt-30
-      ">
-        <h1
-          class="text-[8vw] sm:text-[3rem] text-center md:text-left font-light px-4 md:px-0"
-        >
+      <section class="py-10 px-5 mt-30">
+        <h1 class="font-extralight [8vw] sm:text-[3rem] text-center md:text-left font-extralight px-4 md:px-0">
           Our Services
         </h1>
 
-        <!-- Service 1 -->
-        <div
-          class="flex flex-col md:flex-row justify-between items-center mt-20 mb-16 gap-10"
-        >
-          <div class="w-full md:w-1/2">
-            <img
-              src="Images/img1.png"
-              alt="Custom Jewelry"
-              class="w-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
-            />
-          </div>
-          <div
-            class="w-full md:w-1/2 space-y-5 flex flex-col justify-center items-center md:items-start text-center md:text-left"
-          >
-            <p class="font-bold text-[8vw] sm:text-[42px]">Custom Jewelry</p>
-            <p
-              style="font-family: Heebo, sans-serif; opacity: 60%"
-              class="font-light text-[5vw] sm:text-[22px] text-gray-700"
-            >
-              Our team specializes in designing and crafting complex custom
-              jewelry in gold or platinum. Our 3D designers can work with even
-              the most complex ideas and create a digital model for you to
-              approve before committing to production.
-            </p>
-            <button
-              class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
-            >
-              Read More
-            </button>
-          </div>
-        </div>
+    <!-- Service 1 -->
+  <div class="flex flex-col md:flex-row items-center md:items-stretch justify-between gap-10 mt-10 mb-16">
+    <div class="w-full md:w-1/2">
+      <img
+        src="Images/img1.png"
+        alt="Custom Jewelry"
+        class="w-full h-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
+      />
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-5 p-4">
+      <p class="font-bold  sm:text-[1.5rem] md:text-[2rem]">Custom Jewelry</p>
+      <p class="font-light md:text-[1.25rem] sm:text-[.6rem] text-gray-700 opacity-60">
+        Our team specializes in designing and crafting complex custom jewelry in gold or platinum.
+        Our 3D designers can work with even the most complex ideas and create a digital model for
+        you to approve before committing to production.
+      </p>
+      <button class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer">
+        Read More
+      </button>
+    </div>
+  </div>
 
-        <!-- Service 2 -->
-        <div
-          class="flex flex-col md:flex-row justify-between items-center mt-20 mb-16 gap-10"
-        >
-          <div
-            class="w-full md:w-1/2 space-y-5 flex flex-col justify-center items-center md:items-start text-center md:text-left"
-          >
-            <p class="font-bold text-[8vw] sm:text-[42px]">Engagement Ring</p>
-            <p
-              style="font-family: Heebo, sans-serif; opacity: 60%"
-              class="font-light text-[5vw] sm:text-[22px] text-gray-700"
-            >
-              Our team of 3d modelers and jewelers can create literally any ring
-              you can imagine, including complex designs. We're opening up our
-              services to private clients, so you can get a beautiful, designer
-              quality engagement ring at an affordable price.
-            </p>
-            <button
-              class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
-            >
-              Read More
-            </button>
-          </div>
-          <div class="w-full md:w-1/2">
-            <img
-              src="Images/pexels-say-straight-2735970.png"
-              alt="Engagement Ring"
-              class="w-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
-            />
-          </div>
-        </div>
+  <!-- Service 2 -->
+  <div class="flex flex-col-reverse md:flex-row items-center md:items-stretch justify-between gap-10 mt-20 mb-16">
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-5 p-4">
+      <p class="font-bold  sm:text-[1.5rem] md:text-[2rem]">Engagement Ring</p>
+      <p class="font-light md:text-[1.25rem] sm:text-[.6rem] text-gray-700 opacity-60">
+        Our team of 3D modelers and jewelers can create literally any ring you can imagine,
+        including complex designs. We're opening up our services to private clients, so you can
+        get a beautiful, designer quality engagement ring at an affordable price.
+      </p>
+      <button class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer">
+        Read More
+      </button>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img
+        src="Images/pexels-say-straight-2735970.png"
+        alt="Engagement Ring"
+        class="w-full h-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
+      />
+    </div>
+  </div>
 
-        <!-- Service 3 -->
-        <div
-          class="flex flex-col md:flex-row justify-between items-center mt-20 mb-16 gap-10"
-        >
-          <div class="w-full md:w-1/2">
-            <img
-              src="./Images/Rectangle 7.png"
-              alt="Jewelry Manufacturing"
-              class="w-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
-            />
-          </div>
-          <div
-            class="w-full md:w-1/2 space-y-5 flex flex-col justify-center items-center md:items-start text-center md:text-left"
-          >
-            <p class="font-bold text-[8vw] sm:text-[42px]">
-              Jewelry Manufacturing
-            </p>
-            <p
-              style="font-family: Heebo, sans-serif; opacity: 60%"
-              class="font-light text-[5vw] sm:text-[22px] text-gray-700"
-            >
-              We work with you to make sure your jewelry is produced exactly as
-              your specify and with impeccable standards. We can manufacture a
-              unique collection for your store, or even work with custom orders
-              for your customers.
-            </p>
-            <button
-              class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
-            >
-              Read More
-            </button>
-          </div>
-        </div>
+  <!-- Service 3 -->
+  <div class="flex flex-col md:flex-row items-center md:items-stretch justify-between gap-10 mt-20 mb-16">
+    <div class="w-full md:w-1/2">
+      <img
+        src="./Images/Rectangle 7.png"
+        alt="Jewelry Manufacturing"
+        class="w-full h-full object-cover border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
+      />
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-5 p-4">
+      <p class="font-bold  sm:text-[1.5rem] md:text-[2rem]">Jewelry Manufacturing</p>
+      <p class="font-light md:text-[1.25rem] sm:text-[.6rem] text-gray-700 opacity-60">
+        We work with you to make sure your jewelry is produced exactly as you specify and with
+        impeccable standards. We can manufacture a unique collection for your store, or even work
+        with custom orders for your customers.
+      </p>
+      <button class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer">
+        Read More
+      </button>
+    </div>
+  </div>
       </section>
+
 
       <!-- Banner Section -->
       <section class="py-10 px-4 sm:px-6 md:px-10">
         <div
-          class="flex flex-col md:flex-row justify-between items-stretch bg-[#523C1E] font-extralight overflow-hidden"
+          class="flex flex-col md:flex-row justify-between items-stretch bg-[#2B2024] font-extralight overflow-hidden"
         >
           <!-- Left Image -->
           <div class="w-full md:w-1/2">
@@ -257,7 +220,7 @@
 
             <div>
               <button
-                class="px-4 py-2 text-[#523C1E] font-light text-[4.5vw] sm:text-[1.5rem] bg-white hover:bg-blue-500 transition-colors duration-300"
+                class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer"
               >
                 Send Your Design Idea
               </button>
@@ -284,7 +247,7 @@
             <img
               src="./Connectimg/Rectangle 10.png"
               alt="ladywithnecklace"
-              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
             />
           </div>
 
@@ -295,12 +258,12 @@
             <img
               src="./Connectimg/Rectangle 39.png"
               alt="locket"
-              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
             />
             <img
               src="./Connectimg/Rectangle 40.png"
               alt="diamondnecklace"
-              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
             />
           </div>
 
@@ -309,7 +272,7 @@
             <img
               src="./Connectimg/Rectangle 42.png"
               alt="diamondwings"
-              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300"
+              class="w-full h-auto border-[4px] border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
             />
           </div>
         </div>
@@ -317,7 +280,7 @@
         <!-- Button -->
         <div class="pt-6 mt-16 flex justify-center">
           <button
-            class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+            class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer"
           >
             Instagram
           </button>
@@ -336,11 +299,11 @@
         <!-- Content Section -->
         <div class="flex flex-col md:flex-row items-stretch gap-10">
           <!-- Left Image with right gray border -->
-          <div class="w-full md:w-1/2 bg-gray-500 relative">
+          <div class="w-full md:w-1/2">
             <img
               src="./aboutusimg/young-blonde-woman-pearl-necklace-white-v-neck-top-smiles-widely-with-closed-eyes-takes-selfie-outside 1.png"
               alt="woman"
-              style="position: relative; right: 6px; top: 2px"
+              
               class="girl-img w-full h-full object-cover"
             />
           </div>
@@ -381,17 +344,17 @@
               <img
                 src="./footerimg/twitter 2.png"
                 alt="twitter"
-                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300"
+                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300 cursor-pointer"
               />
               <img
                 src="./footerimg/instagram 2.png"
                 alt="instagram"
-                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300"
+                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300 cursor-pointer"
               />
               <img
                 src="./footerimg/facebook 2.png"
                 alt="facebook"
-                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300"
+                class="w-8 h-8 border-[4px] border-transparent hover:border-blue-500 transition duration-300 cursor-pointer"
               />
             </div>
           </div>
@@ -400,7 +363,7 @@
         <!-- Button -->
         <div class="pt-6 mt-16 flex justify-center">
           <button
-            class="px-4 py-2 text-white font-light text-[4.5vw] sm:text-[1.5rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300"
+            class="px-6 py-2 text-white font-extralight text-[0.8rem] bg-[#523C1E] hover:bg-blue-500 transition-colors duration-300 cursor-pointer"
           >
             Contact us
           </button>
@@ -414,7 +377,7 @@
         <!-- Left Column -->
         <div class="flex-1 space-y-4">
           <p
-            class="text-[5vw] sm:text-4xl font-bold hover:underline hover:decoration-blue-500"
+            class="text-[5vw] sm:text-4xl font-bold hover:underline hover:decoration-blue-500 cursor-pointer"
           >
             Naam
           </p>
@@ -430,22 +393,22 @@
         <!-- Middle Column -->
         <div class="flex flex-1 flex-col space-y-4">
           <p
-            class="text-[5vw] sm:text-4xl font-bold hover:underline hover:decoration-blue-500"
+            class="text-[5vw] sm:text-4xl font-bold hover:underline hover:decoration-blue-500 cursor-pointer"
           >
             About us
           </p>
           <p
-            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500"
+            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500 cursor-pointer"
           >
             Services
           </p>
           <p
-            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500"
+            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500 cursor-pointer"
           >
             Gallery
           </p>
           <p
-            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500"
+            class="text-base sm:text-lg font-extralight hover:underline hover:decoration-blue-500 cursor-pointer"
           >
             About us
           </p>
@@ -454,13 +417,13 @@
         <!-- Right Column -->
         <div class="flex flex-1 flex-col space-y-4">
           <p
-            class="text-2xl sm:text-3xl font-bold hover:underline hover:decoration-blue-500"
+            class="text-2xl sm:text-3xl font-bold hover:underline hover:decoration-blue-500 cursor-pointer"
           >
             Support
           </p>
           <div class="flex flex-col space-y-4">
             <div
-              class="flex items-center gap-2 w-max mx-auto md:mx-0 py-1 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+              class="flex items-center gap-2 w-max mx-auto md:mx-0 py-1 border-4 border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
             >
               <img
                 src="./footerimg/Vector 13 (Stroke).png"
@@ -470,7 +433,7 @@
               <p class="text-sm sm:text-base">hello@naamnyc.com</p>
             </div>
             <div
-              class="flex items-center gap-2 w-max mx-auto md:mx-0 py-1 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+              class="flex items-center gap-2 w-max mx-auto md:mx-0 py-1 border-4 border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
             >
               <img src="./footerimg/Vector.png" alt="mobile" class="w-5 h-5" />
               <p class="text-sm sm:text-base">156512651</p>
@@ -479,22 +442,36 @@
               <img
                 src="./footerimg/twitter 2.png"
                 alt="twitter"
-                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
               />
               <img
                 src="./footerimg/instagram 2.png"
                 alt="instagram"
-                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
               />
               <img
                 src="./footerimg/facebook 2.png"
                 alt="facebook"
-                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300"
+                class="w-6 h-6 border-4 border-transparent hover:border-blue-500 transition-colors duration-300 cursor-pointer"
               />
             </div>
           </div>
         </div>
       </footer>
     </div>
+    
   </body>
+  <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const sidebar = document.getElementById("sidebar");
+      const closeBtn = document.getElementById("closeBtn");
+
+      menuBtn.addEventListener("click", () => {
+        sidebar.classList.remove("-translate-x-full");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+      });
+    </script>
 </html>
