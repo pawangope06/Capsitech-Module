@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Submission Simulation</title>
+</head>
+<body>
+    <!-- form submission using promises to let user know that form is submitting or is submitted -->
+  <form id="myForm">
+    <input type="text" placeholder="Enter your name" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const message = document.getElementById("message");
+
+    function simulateSubmission() {
+      return new Promise((resolve, reject) => {
+        // Simulate network delay
+        setTimeout(() => {
+          resolve("Form submitted successfully!");
+        }, 2000); // 2 second delay
+      });
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent actual form submission
+      message.textContent = "Submitting...";
+
+      simulateSubmission()
+        .then(successMsg => {
+          message.textContent = successMsg;
+        })
+        .catch(err => {
+          message.textContent = "Something went wrong.";
+        });
+    });
+  </script>
+</body>
+</html>
